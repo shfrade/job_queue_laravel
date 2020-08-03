@@ -1,0 +1,649 @@
+{
+	"info": {
+		"_postman_id": "6813a999-7e00-46a1-86e3-bffcabaaaf9d",
+		"name": "Laravel Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "submitters",
+			"item": [
+				{
+					"name": "All Submiter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/submitter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"submitter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Submitter",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "sfrade14",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/submitter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"submitter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/submitter/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"submitter",
+								"3"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit (patch)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "teste 24",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/submitter/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"submitter",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/submitter/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"submitter",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "processor",
+			"item": [
+				{
+					"name": "All processors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New processor",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hostname",
+									"value": "vm02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit (patch)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "hostname",
+									"value": "VM 012",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Next job ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor/nextJob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor",
+								"nextJob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Finish Job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/processor/finishJob/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"processor",
+								"finishJob",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "All jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/job",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New job",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "command",
+									"value": "grep -ir 'teste'",
+									"type": "text"
+								},
+								{
+									"key": "submitter",
+									"value": "sfrade4",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/job",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/job/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"job",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit (patch)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "submitter",
+									"value": "sfrade4",
+									"type": "text"
+								},
+								{
+									"key": "command",
+									"value": "ls -l",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/job/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"job",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/job/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"job",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detailed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/report/job/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"report",
+								"job",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detailed All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/job_queue_laravel/public/api/report/job/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"job_queue_laravel",
+								"public",
+								"api",
+								"report",
+								"job",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8ade5926-33e5-4674-b5b1-2e6be77bb780",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "aa3d7017-d3bd-4c33-abde-74f6f4a74a09",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe5b0b27-c4ec-49d3-b686-2b15f331b07d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bc0fcc3c-ae0f-4314-be95-78bbd5fbca52",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "3ebd8a8f-6bff-4be8-a36f-42c8f6e02cee",
+			"key": "project_url",
+			"value": "http://localhost/laraveltest/public/"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
