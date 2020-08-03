@@ -18,8 +18,5 @@ class Job extends Model
          return $this->hasOne('App\Submitter', 'submitter_id', 'submitter_id');
      }
 
-     public function status(){
-         // On Queue, Processing, Finished
 
-     }
 }
